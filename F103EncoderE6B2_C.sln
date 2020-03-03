@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "F103EncoderE6B2_C", "F103EncoderE6B2_C\F103EncoderE6B2_C.vcxproj", "{7287A35C-1652-4CD1-ABA9-379C205A1F29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7287A35C-1652-4CD1-ABA9-379C205A1F29}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{7287A35C-1652-4CD1-ABA9-379C205A1F29}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{7287A35C-1652-4CD1-ABA9-379C205A1F29}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{7287A35C-1652-4CD1-ABA9-379C205A1F29}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E308069-8098-47CD-853A-CCA55D761BCA}
+	EndGlobalSection
+EndGlobal
