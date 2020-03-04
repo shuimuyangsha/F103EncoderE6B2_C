@@ -34,6 +34,7 @@
     <GNUConfigurationType>Debug</GNUConfigurationType>
     <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
     <ToolchainVersion>5.x//r1</ToolchainVersion>
+    <TargetExt>.elf</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
@@ -46,6 +47,7 @@
       <AdditionalOptions />
       <CLanguageStandard />
       <CPPLanguageStandard />
+      <Optimization>O0</Optimization>
     </ClCompile>
     <Link>
       <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
@@ -76,6 +78,7 @@
   </ImportGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\MDK-ARM\startup_stm32f103xb.s" />
+    <ClCompile Include="..\..\..\..\Src\encoderE6B2.c" />
     <ClCompile Include="..\..\..\..\Src\main.c" />
     <ClCompile Include="..\..\..\..\Src\stm32f1xx_it.c" />
     <ClCompile Include="..\..\..\..\Src\stm32f1xx_hal_msp.c" />
@@ -94,6 +97,89 @@
     <ClCompile Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c" />
     <ClCompile Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c" />
     <ClCompile Include="..\..\..\..\Src\system_stm32f1xx.c" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f100xb.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f100xe.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f101x6.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f101xb.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f101xe.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f101xg.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f102x6.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f102xb.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103x6.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xg.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f105xc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f107xc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_armclang.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_compiler.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_gcc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_iccarm.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_version.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\core_cm3.h" />
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\mpu_armv7.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32f1xx_hal_can_ex_legacy.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32f1xx_hal_can_legacy.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_adc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_adc_ex.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_can.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cec.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_crc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dac.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dac_ex.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_eth.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2s.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_irda.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_iwdg.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_mmc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_nand.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_nor.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pccard.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rtc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rtc_ex.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_smartcard.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sram.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_usart.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_wwdg.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_fsmc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_sdmmc.h" />
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h" />
+    <ClInclude Include="..\..\..\..\Inc\main.h" />
+    <ClInclude Include="..\..\..\..\Inc\stm32f1xx_hal_conf.h" />
+    <ClInclude Include="..\..\..\..\Inc\stm32f1xx_it.h" />
+    <ClInclude Include="..\..\..\..\Src\encoderE6B2.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h" />
+    <None Include="..\..\..\..\F103EncoderE6B2_C.ioc" />
+    <None Include="..\..\..\..\MDK-ARM\F103EncoderE6B2_C.uvprojx" />
+    <None Include="..\..\..\uC_Probe\F103EncoderE6B2_C.wspx" />
     <None Include="mcu.props" />
     <ClInclude Include="$(BSP_ROOT)\Device\Include\stm32f10x.h" />
     <None Include="F103EncoderE6B2_C-Debug.vgdbsettings" />

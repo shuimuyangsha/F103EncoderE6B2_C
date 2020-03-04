@@ -141,5 +141,261 @@
     <ClCompile Include="..\..\..\..\MDK-ARM\startup_stm32f103xb.s">
       <Filter>Source files\Application\MDK-ARM</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Src\encoderE6B2.c">
+      <Filter>Source files\Application\User</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\F103EncoderE6B2_C.ioc">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\uC_Probe\F103EncoderE6B2_C.wspx">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\MDK-ARM\F103EncoderE6B2_C.uvprojx">
+      <Filter>Resource files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_armclang.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_compiler.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_gcc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_iccarm.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\cmsis_version.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\core_cm3.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Inc\main.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Include\mpu_armv7.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_adc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_adc_ex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_can.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32f1xx_hal_can_ex_legacy.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32f1xx_hal_can_legacy.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cec.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Inc\stm32f1xx_hal_conf.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_crc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dac.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dac_ex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_eth.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2s.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_irda.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_iwdg.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_mmc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_nand.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_nor.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pccard.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rtc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rtc_ex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_smartcard.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sram.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_usart.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_wwdg.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Inc\stm32f1xx_it.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_fsmc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_sdmmc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f100xb.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f100xe.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f101x6.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f101xb.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f101xe.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f101xg.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f102x6.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f102xb.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103x6.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xg.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f105xc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f107xc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Src\encoderE6B2.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

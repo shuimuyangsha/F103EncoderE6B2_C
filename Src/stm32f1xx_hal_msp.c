@@ -22,7 +22,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 /* USER CODE BEGIN Includes */
-
+#include "encoderE6B2.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -116,7 +116,7 @@ void HAL_CAN_MspInit(CAN_HandleTypeDef* hcan)
     __HAL_AFIO_REMAP_CAN1_2();
 
     /* CAN1 interrupt Init */
-    HAL_NVIC_SetPriority(CAN1_RX1_IRQn, 0, 0);
+    HAL_NVIC_SetPriority(CAN1_RX1_IRQn, 1, 2);
     HAL_NVIC_EnableIRQ(CAN1_RX1_IRQn);
   /* USER CODE BEGIN CAN1_MspInit 1 */
 
@@ -183,8 +183,11 @@ void HAL_TIM_Encoder_MspInit(TIM_HandleTypeDef* htim_encoder)
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+    /* TIM4 interrupt Init */
+    HAL_NVIC_SetPriority(TIM4_IRQn, 1, 3);
+    HAL_NVIC_EnableIRQ(TIM4_IRQn);
   /* USER CODE BEGIN TIM4_MspInit 1 */
-
+	//HAL_TIM_Base_Start_IT(&TIM4_Handler);
   /* USER CODE END TIM4_MspInit 1 */
   }
 
@@ -212,6 +215,8 @@ void HAL_TIM_Encoder_MspDeInit(TIM_HandleTypeDef* htim_encoder)
     */
     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_6|GPIO_PIN_7);
 
+    /* TIM4 interrupt DeInit */
+    HAL_NVIC_DisableIRQ(TIM4_IRQn);
   /* USER CODE BEGIN TIM4_MspDeInit 1 */
 
   /* USER CODE END TIM4_MspDeInit 1 */

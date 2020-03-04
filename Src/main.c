@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "encoderE6B2.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,7 +100,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_CAN_Init();
   /* USER CODE BEGIN 2 */
-	HAL_TIM_Encoder_Start(&htim4,TIM_CHANNEL_ALL);
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -213,7 +213,7 @@ static void MX_TIM4_Init(void)
 
   /* USER CODE END TIM4_Init 1 */
   htim4.Instance = TIM4;
-  htim4.Init.Prescaler = 3;
+  htim4.Init.Prescaler = 1;
   htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim4.Init.Period = 65535;
   htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
@@ -238,7 +238,11 @@ static void MX_TIM4_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN TIM4_Init 2 */
+  HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_1 | TIM_CHANNEL_2);
+//  HAL_TIM_Encoder_Start_IT(&TIM4_Handler, TIM_CHANNEL_1 | TIM_CHANNEL_2);//开启中断
 
+  //__HAL_TIM_ENABLE_IT(&TIM4_Handler, TIM_IT_UPDATE);   //使能更新中断
+//  __HAL_TIM_ENABLE(&TIM4_Handler);
   /* USER CODE END TIM4_Init 2 */
 
 }

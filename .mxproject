@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=E:/VS_GDB/ARM/testF103/F103EncoderE6B2_C/F103EncoderE6B2_C/Inc
+HeaderPath=E:/VS_GDB/ARM/testF103/F103EncoderE6B2_C/Inc
 HeaderFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=E:/VS_GDB/ARM/testF103/F103EncoderE6B2_C/F103EncoderE6B2_C/Src
+SourcePath=E:/VS_GDB/ARM/testF103/F103EncoderE6B2_C/Src
 SourceFiles=stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
