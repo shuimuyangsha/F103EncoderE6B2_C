@@ -108,6 +108,9 @@ int main(void)
   while (1)
   {
 	 cnt = __HAL_TIM_GET_COUNTER(&htim4); 
+
+	 Circle_Print();
+
 	  
 	 HAL_UART_Transmit(&huart1, (uint8_t *)&cnt, 2, 100);
 	 //HAL_UART_Transmit(&huart1, (uint8_t *)&string1, 8, 100);
@@ -239,9 +242,10 @@ static void MX_TIM4_Init(void)
   }
   /* USER CODE BEGIN TIM4_Init 2 */
   HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_1 | TIM_CHANNEL_2);
-//  HAL_TIM_Encoder_Start_IT(&TIM4_Handler, TIM_CHANNEL_1 | TIM_CHANNEL_2);//开启中断
+  HAL_TIM_Encoder_Start_IT(&htim4, TIM_CHANNEL_1 | TIM_CHANNEL_2);//开启中断
 
-  //__HAL_TIM_ENABLE_IT(&TIM4_Handler, TIM_IT_UPDATE);   //使能更新中断
+  HAL_TIM_Base_Start_IT(&htim4);
+  __HAL_TIM_ENABLE_IT(&htim4, TIM_IT_UPDATE);   //使能更新中断
 //  __HAL_TIM_ENABLE(&TIM4_Handler);
   /* USER CODE END TIM4_Init 2 */
 

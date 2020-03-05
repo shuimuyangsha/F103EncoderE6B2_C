@@ -187,7 +187,6 @@ void HAL_TIM_Encoder_MspInit(TIM_HandleTypeDef* htim_encoder)
     HAL_NVIC_SetPriority(TIM4_IRQn, 1, 3);
     HAL_NVIC_EnableIRQ(TIM4_IRQn);
   /* USER CODE BEGIN TIM4_MspInit 1 */
-	//HAL_TIM_Base_Start_IT(&TIM4_Handler);
   /* USER CODE END TIM4_MspInit 1 */
   }
 

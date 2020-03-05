@@ -27,7 +27,7 @@
     <AllDependencies>
       <ProjectDependency>
         <RelativePath>..\..\..\..\MDK-ARM\F103EncoderE6B2_C.uvprojx</RelativePath>
-        <Timestamp>132277196554597775</Timestamp>
+        <Timestamp>132277949074199778</Timestamp>
       </ProjectDependency>
     </AllDependencies>
     <RootDirectory>
@@ -42,6 +42,9 @@
             <VirtualDirectorySnapshot>
               <Name>User</Name>
               <Files>
+                <VirtualFileSnapshot>
+                  <RelativePath>..\..\..\..\Src\encoderE6B2.c</RelativePath>
+                </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
                   <RelativePath>..\..\..\..\Src\main.c</RelativePath>
                 </VirtualFileSnapshot>
