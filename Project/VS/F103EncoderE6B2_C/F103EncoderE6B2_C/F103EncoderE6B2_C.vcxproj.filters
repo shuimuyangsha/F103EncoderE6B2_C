@@ -155,6 +155,9 @@
     <None Include="..\..\..\..\MDK-ARM\F103EncoderE6B2_C.uvprojx">
       <Filter>Resource files</Filter>
     </None>
+    <None Include="..\..\..\..\..\..\..\..\嵌入式学习\资料\其他\计米套件（编码器E6B2-C）\E6B2-C 产品样本（Web版）.pdf">
+      <Filter>Resource files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h">

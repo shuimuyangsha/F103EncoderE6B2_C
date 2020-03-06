@@ -47,11 +47,11 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-//extern CAN_HandleTypeDef hcan;
-
+extern CAN_HandleTypeDef hcan;
+extern TIM_HandleTypeDef htim3;
 extern TIM_HandleTypeDef htim4;
 
-//extern UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart1;
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
